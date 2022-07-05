@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- Site Metas -->
+<title>CIOTR - INTERFACE</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Site Icons -->
+<link rel="shortcut icon" href="images/fevicon.ico.png"
+	type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- Colors CSS -->
+<link rel="stylesheet" href="css/colors.css">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+<!-- Modernizer for Portfolio -->
+<script src="js/modernizer.js"></script>
+<!-- [if lt IE 9] -->
+</head>
+</head>
+<style>
+table {
+	width: 100%;
+	margin-left: 355px;
+	margin-bottom: 500;
+}
+
+table, th, td {
+	text-align: center;
+	border: 1px solid;
+	align-content: center;
+	align-items: :center;
+	align-self: center;
+	margin-left: 303px;
+}
+
+td {
+	width: 7cm;
+}
+
+button {
+	text-align: center;
+	height: 10%;
+	border: 3px solid green;
+	text-align: center;
+	margin-left: 91%;
+	margin-top: 13px;
+}
+
+select {
+	text-align: center;
+	height: 40px;
+	position: relative;
+	border: 3px solid green;
+}
+</style>
+<body class="clinic_version">
+	<div class="header-bottom wow fadeIn">
+		<div class="container">
+			<nav class="main-menu">
+
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a class="active" href="index.html">Home</a></li>
+						<li><a data-scroll href="#HH">Heart H</a></li>
+						<li><a data-scroll href="#HL">Heart L</a></li>
+						<li><a data-scroll href="#LA">Linear A</a></li>
+						<li><a data-scroll href="#GS">Gyroscope</a></li>
+						<li><a data-scroll href="#SC">Step c</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="serch-bar"></div>
+		</div>
+	</div>
+	<div id="home" class="parallax first-section wow fadeIn"
+		data-stellar-background-ratio="0.4"
+		style="background-image: url('images/slider-bg.png');">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="text-contant">
+						<h2>
+							<span class="center"><span class="icon"><img
+									src="images/icon-logo.png" alt="#" /></span></span> <a href=""
+								class="typewrite" data-period="2000"
+								data-type='[ "CIOTR interface!" ]'> <span class="wrap"></span>
+							</a>
+						</h2>
+					</div>
+				</div>
+			</div>
+			<!-- end row -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- AAAAAAAAAAAAAAAAAAAA -->
+	<div id="time-table" class="time-table-section">
+		<div class="container">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="row">
+					<div class="service-time one" style="background: #2895f1;">
+						<span class="info-icon"><i class="fa fa-user-md"
+							aria-hidden="true"></i></span>
+						<h3>Fortunato Davide Caminiti</h3>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="row">
+					<div class="service-time middle" style="background: #0071d1;">
+						<span class="info-icon"><i class="fa fa-file-text"
+							aria-hidden="true"></i></span>
+						<h3>CIOTR</h3>
+						<div class="time-table-section">
+							<ul>
+								<li>
+									<p><strong>IoT PROJECT</strong></p>
+								</li>
+							</ul>
+						</div>
+					</div> 
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="row">
+					<div class="service-time three" style="background: #0060b1;">
+						<span class="info-icon"><i class="fa fa-user-md"
+							aria-hidden="true"></i></span>
+						<h3>Giuseppe Riggio</h3>
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- AAAAAAAAAAAAAAAAAAAA -->
+	<div id="HH" class="section wow fadeIn">
+		<div class="container">
+			<div class="heading">
+				<img src="images/pngegg (2).png" alt="" style="width: 50px">
+				<h2>Heart rate high</h2>
+				<h2 style="color: red;" id="hrhas"></h2>
+			</div>
+			<!-- end title -->
+			<div class="row">
+				<div class="col-md-6">
+					<div class="message-box">
+
+						<div>
+							<table style="border: 1">
+								<tbody>
+									<tr>
+										<td><strong>Heart rate</strong></td>
+										<td>
+											<h3 id="hrhm"></h3>
+										</td>
+									</tr>
+									<tr>
+										<td><strong>Date</strong></td>
+										<td>
+											<h3 id="hrhts"></h3>
+										</td>
+									</tr>
+									<tr>
+										<td><strong>Threshold</strong></td>
+										<td>
+											<h3 id="hrhs"></h3>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<button id="foo"
+							class="btn btn-light btn-radius btn-brd grd1 effect-1"
+							onclick="getSensorValHH()">Refresh</button>
+					</div>
+					<!-- end messagebox -->
+				</div>
+			</div>
+			<!-- end row -->
+			<!-- end container -->
+		</div>
+	</div>
+	<script>
+		function getSensorValHH() {
+
+			$(document)
+					.ready(
+							function() {
+								var url = "http://localhost:8080/api/clients/CIOTR/3200/0";
+								//var select = document.getElementById("sen");
+								//var url = select.options[select.selectedIndex].value;
+								console.log(url);
+								$
+										.ajax({
+											url : url,
+											dataType : 'json',
+											type : 'get',
+											success : function(result) {
+												console.log(result)
+												var table = $("<table>")
+														.append(
+																"<tr><th>ID</th><th>Valore</th><th>Timestamp</th></tr>");
+
+												for (i = 0; i < result.content.resources.length; i++) {
+													table
+															.append("<tr><td>"
+																	+ result.content.resources[i].id
+																	+ "</td><td>"
+																	+ result.content.resources[i].value
+																	+ "</td><td>"
+																	+ result.content.resources[i].timestamp
+																	+ "</td></tr>");
+												}
+
+												$("#hrhm")
+														.html(
+																result.content.resources[0].value);
+												$("#hrhts")
+														.html(
+																result.content.resources[0].timestamp);
+												$("#hrhs")
+														.html(
+																result.content.resources[9].value);
+												if (result.content.resources[8].value == 1) {
+													$("#hrhas")
+															.html(
+																	"Attention!! Heart activity over the threshold");
+												}
+												$("#message1").html(table);
+
+											},
+											error : function(error) {
+												alert(error);
+											}
+										});
+							});
+		}
+	</script>
+
+	<div id="HL" class="section wow fadeIn">
+		<div class="container">
+			<div class="heading">
+				<img src="images/pngegg (2).png" alt="" style="width: 50px">
+				<h2>Heart rate low</h2>
+				<h2 style="color: red;" id="hrlas"></h2>
+			</div>
+			<!-- end title -->
+			<div class="row">
+				<div class="col-md-6">
+					<div class="message-box">
+						<table style="border: 1">
+							<tbody>
+								<tr>
+									<td><strong>Heart rate</strong></td>
+									<td>
+										<h3 id="hrlm"></h3>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>Date</strong></td>
+									<td>
+										<h3 id="hrlts"></h3>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>Threshold</strong></td>
+									<td>
+										<h3 id="hrls"></h3>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<button data-scroll
+							class="btn btn-light btn-radius btn-brd grd1 effect-1"
+							onclick="getSensorValHL()">Refresh</button>
+					</div>
+					<!-- end messagebox -->
+				</div>
+			</div>
+			<!-- end row -->
+			<!-- end container -->
+		</div>
+	</div>
+
+	<script>
+		function getSensorValHL() {
+			$(document)
+					.ready(
+							function() {
+								var url = "http://localhost:8080/api/clients/CIOTR/3200/1";
+								//var select = document.getElementById("sen");
+								//var url = select.options[select.selectedIndex].value;
+								console.log(url);
+								$
+										.ajax({
+											url : url,
+											dataType : 'json',
+											type : 'get',
+											success : function(result) {
+												console.log(result)
+												var table = $("<table>")
+														.append(
+																"<tr><th>ID</th><th>Valore</th><th>Timestamp</th></tr>");
+
+												for (i = 0; i < result.content.resources.length; i++) {
+													table
+															.append("<tr><td>"
+																	+ result.content.resources[i].id
+																	+ "</td><td>"
+																	+ result.content.resources[i].value
+																	+ "</td><td>"
+																	+ result.content.resources[i].timestamp
+																	+ "</td></tr>");
+												}
+
+												$("#hrlm")
+														.html(
+																result.content.resources[0].value);
+												$("#hrlts")
+														.html(
+																result.content.resources[0].timestamp);
+												$("#hrls")
+														.html(
+																result.content.resources[9].value);
+												if (result.content.resources[8].value == 1) {
+													$("#hrlas")
+															.html(
+																	"Attention!! Heart activity under the threshold");
+												}
+
+												$("#message2").html(table);
+											},
+											error : function(error) {
+												alert(error);
+											}
+										});
+							});
+		}
+	</script>
+
+
+
+
+
+
+	<div id="LA" class="section wow fadeIn">
+		<div class="container">
+			<div class="heading">
+				<img src="images/pngegg.png" alt="" style="width: 50px">
+				<h2>Linear accelerator</h2>
+				<h2 style="color: red;" id="laas"></h2>
+			</div>
+			<!-- end title -->
+			<!-- end title -->
+			<div class="row">
+				<div class="col-md-6">
+					<div class="message-box">
+						<table style="border: 1">
+							<tbody>
+								<tr>
+									<td><strong>X</strong></td>
+									<td>
+										<h3 id="lax"></h3>
+									</td>
+									<td>
+										<h3 id="laxt"></h3>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>Y</strong></td>
+									<td>
+										<h3 id="lay"></h3>
+									</td>
+									<td>
+										<h3 id="layt"></h3>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>Z</strong></td>
+									<td>
+										<h3 id="laz"></h3>
+									</td>
+									<td>
+										<h3 id="lazt"></h3>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2"><strong>Threshold</strong></td>
+									<td>
+										<h3 id="las"></h3>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<button data-scroll
+							class="btn btn-light btn-radius btn-brd grd1 effect-1"
+							onclick="getSensorValLA()">Refresh</button>
+					</div>
+					<!-- end messagebox -->
+				</div>
+			</div>
+			<!-- end row -->
+			<!-- end container -->
+		</div>
+	</div>
+
+	<script>
+		function getSensorValLA() {
+
+			$(document)
+					.ready(
+							function() {
+								var url = "http://localhost:8080/api/clients/CIOTR/3313/0";
+								//var select = document.getElementById("sen");
+								//var url = select.options[select.selectedIndex].value;
+								console.log(url);
+								$
+										.ajax({
+											url : url,
+											dataType : 'json',
+											type : 'get',
+											success : function(result) {
+												console.log(result)
+												var table = $("<table>")
+														.append(
+																"<tr><th>ID</th><th>Valore</th><th>Timestamp</th></tr>");
+
+												for (i = 0; i < result.content.resources.length; i++) {
+													table
+															.append("<tr><td>"
+																	+ result.content.resources[i].id
+																	+ "</td><td>"
+																	+ result.content.resources[i].value
+																	+ "</td><td>"
+																	+ result.content.resources[i].timestamp
+																	+ "</td></tr>");
+												}
+
+												$("#lax")
+														.html(
+																result.content.resources[0].value);
+												$("#laxt")
+														.html(
+																result.content.resources[0].timestamp);
+												$("#lay")
+														.html(
+																result.content.resources[1].value);
+												$("#layt")
+														.html(
+																result.content.resources[1].timestamp);
+												$("#laz")
+														.html(
+																result.content.resources[2].value);
+												$("#lazt")
+														.html(
+																result.content.resources[2].timestamp);
+												$("#las")
+														.html(
+																result.content.resources[7].value);
+												if (result.content.resources[6].value == 1) {
+													$("#laas")
+															.html(
+																	"Attention!! suspected acceleration");
+												}
+
+												$("#message3").html(table);
+											},
+											error : function(error) {
+												alert(error);
+											}
+										});
+							});
+		}
+	</script>
+
+	<div id="GS" class="section wow fadeIn">
+		<div class="container">
+			<div class="heading">
+				<img src="images/pngegg (1).png" alt="" style="width: 50px">
+				<h2>Gyroscope</h2>
+				<h2 style="color: red;" id="gsas"></h2>
+			</div>
+			<!-- end title -->
+			<div class="row">
+				<div class="col-md-6">
+					<div class="message-box">
+						<table style="border: 1">
+							<tbody>
+								<tr>
+									<td><strong>X</strong></td>
+									<td>
+										<h3 id="gsx"></h3>
+									</td>
+									<td>
+										<h3 id="gsxt"></h3>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>Y</strong></td>
+									<td>
+										<h3 id="gsy"></h3>
+									</td>
+									<td>
+										<h3 id="gsyt"></h3>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>Z</strong></td>
+									<td>
+										<h3 id="gsz"></h3>
+									</td>
+									<td>
+										<h3 id="gszt"></h3>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2"><strong>Threshold</strong></td>
+									<td>
+										<h3 id="gss"></h3>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<button data-scroll
+							class="btn btn-light btn-radius btn-brd grd1 effect-1"
+							onclick="getSensorValGS()">Refresh</button>
+					</div>
+					<!-- end messagebox -->
+				</div>
+			</div>
+			<!-- end row -->
+			<!-- end container -->
+		</div>
+	</div>
+
+	<script>
+		function getSensorValGS() {
+
+			$(document)
+					.ready(
+							function() {
+								var url = "http://localhost:8080/api/clients/CIOTR/3334/0";
+								//var select = document.getElementById("sen");
+								//var url = select.options[select.selectedIndex].value;
+								console.log(url);
+								$
+										.ajax({
+											url : url,
+											dataType : 'json',
+											type : 'get',
+											success : function(result) {
+												console.log(result)
+												var table = $("<table>")
+														.append(
+																"<tr><th>ID</th><th>Valore</th><th>Timestamp</th></tr>");
+
+												for (i = 0; i < result.content.resources.length; i++) {
+													table
+															.append("<tr><td>"
+																	+ result.content.resources[i].id
+																	+ "</td><td>"
+																	+ result.content.resources[i].value
+																	+ "</td><td>"
+																	+ result.content.resources[i].timestamp
+																	+ "</td></tr>");
+												}
+
+												$("#gsx")
+														.html(
+																result.content.resources[0].value);
+												$("#gsxt")
+														.html(
+																result.content.resources[0].timestamp);
+												$("#gsy")
+														.html(
+																result.content.resources[1].value);
+												$("#gsyt")
+														.html(
+																result.content.resources[1].timestamp);
+												$("#gsz")
+														.html(
+																result.content.resources[2].value);
+												$("#gszt")
+														.html(
+																result.content.resources[2].timestamp);
+												$("#gss")
+														.html(
+																result.content.resources[15].value);
+												if (result.content.resources[14].value == 1) {
+													$("#gsas")
+															.html(
+																	"Attention!! suspected fall");
+												}
+
+												$("#message4").html(table);
+											},
+											error : function(error) {
+												alert(error);
+											}
+										});
+							});
+		}
+	</script>
+
+	<div id="SC" class="section wow fadeIn">
+		<div class="container">
+			<div class="heading">
+				<img src="images/pngeggC.png" alt="" style="width: 50px">
+				<h2>Step counter</h2>
+			</div>
+			<!-- end title -->
+			<div class="row">
+				<div class="col-md-6">
+					<div class="message-box">
+					<table style="border: 1">
+							<tbody>
+								<tr>
+									<td><h3>Number of steps: </h3></td>
+									<td>
+										<h3 id="step"></h3>
+									</td>
+								</tr>
+								<tr>
+									<td><h3>Detection date: </h3></td>
+									<td>
+										<h3 id="stept"></h3>
+									</td>
+								</tr>
+								</tbody>
+								</table>
+						
+						<h3 id="stept"></h3>
+						<button data-scroll
+							class="btn btn-light btn-radius btn-brd grd1 effect-1"
+							onclick="getSensorValSC()">Refresh</button>
+					</div>
+					<!-- end messagebox -->
+				</div>
+			</div>
+			<!-- end row -->
+			<!-- end container -->
+		</div>
+	</div>
+
+	<script>
+		function getSensorValSC() {
+
+			$(document)
+					.ready(
+							function() {
+								var url = "http://localhost:8080/api/clients/CIOTR/9669/0";
+								//var select = document.getElementById("sen");
+								//var url = select.options[select.selectedIndex].value;
+								console.log(url);
+								$
+										.ajax({
+											url : url,
+											dataType : 'json',
+											type : 'get',
+											success : function(result) {
+												console.log(result)
+												var table = $("<table>")
+														.append(
+																"<tr><th>ID</th><th>Valore</th><th>Timestamp</th></tr>");
+
+												for (i = 0; i < result.content.resources.length; i++) {
+													table
+															.append("<tr><td>"
+																	+ result.content.resources[i].id
+																	+ "</td><td>"
+																	+ result.content.resources[i].value
+																	+ "</td><td>"
+																	+ result.content.resources[i].timestamp
+																	+ "</td></tr>");
+												}
+												$("#step")
+														.html(
+																result.content.resources[0].value);
+												$("#stept")
+														.html(
+																result.content.resources[0].timestamp);
+												$("#message5").html(table);
+											},
+											error : function(error) {
+												alert(error);
+											}
+										});
+							});
+		}
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</html>
